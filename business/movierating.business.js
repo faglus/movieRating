@@ -67,11 +67,6 @@ const deleteMovieRating = async (id) => {
 }
 // export
 
-console.log('abc')
-console.log('abc')
-console.log('abc')
-console.log('abc')
-
 const exportMovieRating = async () => {
     try {
         const exportedData = await Item.find({}).lean();
