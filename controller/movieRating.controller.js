@@ -57,7 +57,8 @@ const updateMovieRatingController = async (req, res) => {
     try {
         const { id } = req.params;
         let movieRatingData = await getbyID(id);
-
+  
+        
         if (!movieRatingData) {
             return res.status(404).json({ message: "Movie rating not found" });
         }

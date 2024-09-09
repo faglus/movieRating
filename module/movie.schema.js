@@ -21,6 +21,7 @@ const movieSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    
     earning: {
         type: Number,
         required: true,

@@ -30,7 +30,7 @@ app.listen(portNo, () => {
 const movieRatingRouter = require('./route/movierating.route');
 const userRouter = require('./route/userMovieRating.route');
 const loginRouter =require('./route/login.route');
-// const validateJWt = require('./middleware/verifyJWT');
+const validateJWt = require('./middleware/verifyJWT');
 
 app.use(express.json());
 app.use('/movierating', movieRatingRouter);
