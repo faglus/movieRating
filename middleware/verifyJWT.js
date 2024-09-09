@@ -6,6 +6,7 @@ function validateJWt(req,res,next){
 
     if(!token){
         return res.status(401).json({message:'Authorization token is missing'});
+        
 
     }
     jwt.verify(token,process.env.SECRET_KEY,(err,decoded)=>{
